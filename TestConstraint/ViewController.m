@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *widthConstraint;
 
 @end
 
@@ -25,5 +27,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)topSubViewHeightAction:(UISlider *)sender {
+    self.heightConstraint.constant = sender.value;
+}
 
+- (IBAction)bottomSubViewWidthAction:(UISlider *)sender {
+    self.widthConstraint.constant = sender.value;
+}
 @end

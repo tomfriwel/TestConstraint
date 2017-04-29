@@ -56,12 +56,18 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="0v2-jg-zmT"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="topSubViewHeightAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="wwA-qv-Xo4"/>
+                                </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fuF-KS-ObR">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="200" minValue="0.0" maxValue="500" translatesAutoresizingMaskIntoConstraints="NO" id="fuF-KS-ObR">
                                 <rect key="frame" x="18" y="587" width="339" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="R0F-ys-vTh"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="bottomSubViewWidthAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="9dc-si-X9A"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height/Width" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sN9-TG-jdA">
                                 <rect key="frame" x="136" y="496" width="102" height="21"/>
@@ -87,6 +93,10 @@
                             <constraint firstItem="L9V-tQ-cJT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="ykA-Ra-9Lp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heightConstraint" destination="YIs-Hd-QCn" id="bWz-3X-q1S"/>
+                        <outlet property="widthConstraint" destination="yn5-lz-IgB" id="0Cf-ws-8u9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
